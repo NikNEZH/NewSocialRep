@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Luxurious+Roman&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Luxurious Roman", cursive;
+  background-color: #111;
+  color: rgb(122, 46, 46);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url(https://mobimg.b-cdn.net/v3/fetch/ca/cab09002a85b912c6ca45c5787f5b25a.jpeg?w=1470&r=0.5625);
+  background-size: auto;
+}
+
+.container {
+  position: absolute;
+  left: 30px;
+  top: 30px;
+  overflow: visible;
+  min-height: 480px;
+  width: 768px;
+  max-width: 100%;
+}
+
+.circle {
+  background-image: url(images/jakob-owens-TA-aFfdoi7Y-unsplash.jpg);
+  background-repeat: round;
+  float: left;
+  shape-outside: circle(50%);
+  width: 500px;
+  height: 500px;
+  border-radius: 100%;
+  margin: 10px;
+}
+
+a {
+  color: #fff;
+  font-size: 20px;
+  text-decoration: none;
+  background: rgb(122, 46, 46);
+  padding: 15px 30px;
+  border-radius: 15px;
+  animation: ligth 1.5s linear infinite alternate;
+}
+
+@keyframes ligth {
+  0% {
+    box-shadow: 0 0 20px 0 rgba(201, 235, 10, 0.808);
+  }
+  100% {
+    box-shadow: 0 0 20px 0 rgb(221, 164, 7);
+  }
+}
+
+a:hover {
+  cursor: pointer;
+  color: rgb(3, 8, 77);
+}
+
+#buton {
+  position: fixed;
+  text-align: right;
+}
+
+#buton div {
+  display: inline-block;
+  padding: 1em;
+  position: relative;
+  left: 800px;
+  top: -150px;
+}
