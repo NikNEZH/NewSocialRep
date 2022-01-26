@@ -16,7 +16,7 @@ body {
   align-items: center;
   min-height: 100vh;
   background-image: url(https://mobimg.b-cdn.net/v3/fetch/ca/cab09002a85b912c6ca45c5787f5b25a.jpeg?w=1470&r=0.5625);
-  background-size: cover;
+  background-size: contain;
 }
 
 .container {
