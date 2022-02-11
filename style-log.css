@@ -1,21 +1,31 @@
 @import url("https://fonts.googleapis.com/css2?family=Luxurious+Roman&display=swap");
 
+html {
+  font-size: 1vw;
+  overflow-x: hidden;
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+}
+
 * {
-  margin: 0;
-  padding: 0;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
 body {
-  background-color: #111;
-  color: #ccc;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  background-image: url(https://mobimg.b-cdn.net/v3/fetch/5d/5d35760f17e08844de576d99e954e8d1.jpeg?w=1470&r=0.5625);
+  font-family: sans-serif;
+  margin: 0;
+  line-height: 1.2;
+  font-weight: 400;
+  overflow-x: hidden;
+  color: #282828;
+  background: url(/new-git-project/NewSocialRep/images/woman-under-seljalandsfoss-waterfall-iceland-picjumbo-com.jpg)
+    no-repeat center;
   background-size: cover;
+}
+
+div {
+  display: block;
 }
 
 h1 {
@@ -34,12 +44,12 @@ p {
 }
 
 .container {
-  position: absolute;
-  overflow: hidden;
-  min-height: 480px;
-  width: 768px;
-  max-width: 100%;
-  opacity: 0.8;
+  color: #282828;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  border-radius: 0 0 100px 100px;
+  opacity: 0.9;
 }
 
 .form-container {
@@ -133,7 +143,7 @@ button:focus {
 .overlay {
   background: transparent;
   background: linear-gradient(to right, #ff4b2b, #ff416c) no repeat 0 0 / cover;
-  color: #fff;
+  color: rgb(31, 1, 1);
   position: absolute;
   left: -100%;
   height: 100%;
@@ -190,4 +200,24 @@ button:focus {
 
 .container.right-panel-active .overlay-right {
   transform: translateX(20%);
+}
+
+#signUp {
+  color: rgb(59, 9, 9);
+  font-size: 30px;
+  width: 30px;
+  text-decoration: none;
+  padding: 15px 30px;
+  border-radius: 15px;
+  outline: 0;
+  animation: ligth 1.5s linear infinite alternate;
+}
+
+@keyframes ligth {
+  0% {
+    box-shadow: 0 0 20px 0 rgba(150, 13, 143, 0.979);
+  }
+  100% {
+    box-shadow: 0 0 20px 0 rgb(11, 122, 156);
+  }
 }
